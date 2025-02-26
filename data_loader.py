@@ -6,4 +6,11 @@ print("ok")
 
 
 class DataLoader:
-    pass
+    def fetch_bioarxiv_papers(self,query):
+        def search_bioarxiv(query):
+            pass
+
+
+    def fetch_google_scholar_papers(self,query):
+        def search_google_scholar(query):
+            pass
