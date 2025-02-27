@@ -6,10 +6,13 @@ print("ok")
 
 
 class DataLoader:
-    def __init__(self):
+    def __init__(self, search_agent = None):
+        self.search_agent = search_agent
         print("DataLoader Init")
-        
+
     def fetch_biorxiv_papers(self,query):
+
+        papers = []
         def search_biorxiv(query):
             url = f"https://www.biorxiv.org/search/=all:{query}&start=0&max_results=5"
             response = requests.get(url)
